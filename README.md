@@ -1,4 +1,4 @@
-# PROYECTO DE BONSAI
+# PROYECTO BONSAI
 Realizar el modelado de los distintos bonsais que tenemos y sus
 necesidades actuales.
 Dejamos a tu criterio la organización del código
@@ -16,7 +16,7 @@ Los distintos tipos de bonsais que tenemos son:
    * Abono
    * Transplante
    
-###Necesidades individuales
+### Necesidades individuales
    * Pulverizar: Olmo
    
    Funcionalidad según las necesidades del bonsai
