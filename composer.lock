@@ -4,8 +4,58 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e77b7d594056580678fe7de815ac7270",
+    "content-hash": "b7858f905ff6948114d3cae6679bda0c",
     "packages": [
+        {
+            "name": "jaybizzle/php-seasons",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/PHP-Seasons.git",
+                "reference": "f9f6ff153fe025fa2289bd0e144205f1fab70722"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/PHP-Seasons/zipball/f9f6ff153fe025fa2289bd0e144205f1fab70722",
+                "reference": "f9f6ff153fe025fa2289bd0e144205f1fab70722",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "mbeech@mark-beech.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A small utility class that returns the meteorological season from a given date.",
+            "homepage": "https://github.com/JayBizzle/PHP-Seasons/",
+            "keywords": [
+                "date",
+                "season",
+                "seasons"
+            ],
+            "support": {
+                "issues": "https://github.com/JayBizzle/PHP-Seasons/issues",
+                "source": "https://github.com/JayBizzle/PHP-Seasons/tree/master"
+            },
+            "time": "2017-09-13T20:01:18+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "2.0.0",
@@ -2680,7 +2730,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },

@@ -1,4 +1,7 @@
 {
+    "jaybizzle/php-seasons": {
+        "version": "v1.0.0"
+    },
     "psr/cache": {
         "version": "2.0.0"
     },
