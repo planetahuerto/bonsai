@@ -40,9 +40,9 @@ final class Bonsai
         return $this->type;
     }
 
-    public function water($month): string
+    public function waterPeriodicity($month): string
     {
-        $this->type->water($month);
+        return $this->type->water($month);
     }
 
 }

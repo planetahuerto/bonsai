@@ -8,4 +8,15 @@ class ElmType extends BonsaiType
     {
 
     }
+
+    public function water($month)
+    {
+        if (8 == $month || 7 == $month) {
+            return parent::water($month);
+        }
+
+
+    }
+
+
 }

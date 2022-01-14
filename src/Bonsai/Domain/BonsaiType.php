@@ -6,7 +6,10 @@ abstract class BonsaiType
 {
     public function water($month)
     {
-
+        if (8 == $month || 7 == $month) {
+            return 'muy frecuente';
+        }
+        return '';
     }
 
     public function fertilize()

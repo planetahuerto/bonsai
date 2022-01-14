@@ -8,7 +8,7 @@ class UseCaseWater
 {
     public function do(Bonsai $bonsai, $month)
     {
-        $bonsai->type()->water();
+        return $bonsai->waterPeriodicity($month);
     }
 
 }
