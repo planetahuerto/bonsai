@@ -21,4 +21,11 @@ abstract class BonsaiType
     {
 
     }
+
+    public function __toString(): string
+    {
+        return basename(get_class($this));
+    }
+
+
 }

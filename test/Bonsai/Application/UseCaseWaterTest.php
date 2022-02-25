@@ -23,8 +23,11 @@ class UseCaseWaterTest extends TestCase
 
     private $waterMap = [
         'elm' => [
-            self::JULY => 'muy frecuente',
-            self::JULY => 'muy frecuente'
+            self::JANUARY => 'muy frecuente',
+            self::FEBRUARY => 'muy frecuente',
+            self::MARCH => '',
+            self::APRIL => ,
+
         ]
     ];
     private $meses = [
@@ -42,12 +45,19 @@ class UseCaseWaterTest extends TestCase
         self::DECEMBER
     ];
 
-    private UseCaseWater $useCase;
+    private UseCaseWater $waterUseCase;
+
+    public static function setUpBeforeClass(): void
+    {
+        parent::setUpBeforeClass();
+
+    }
+
 
     protected function setUp():void
     {
         parent::setUp();
-        $this->useCase = new UseCaseWater();
+        $this->waterUseCase = new UseCaseWater();
     }
 
     /**
@@ -55,25 +65,24 @@ class UseCaseWaterTest extends TestCase
      */
     public function given_an_elm_bonsai_when_executes_then_the_bonsai_is_watered()
     {
-        $bonsai = Bonsai::elm();
-        $this->testWater($bonsai, 'elm');
+        $elm = Bonsai::elm();
+        $this->testWaterAllMonths($elm);
     }
 
     public function given_an_ficus_bonsai_when_executes_then_the_bonsai_is_watered(){
-        $bonsai = Bonsai::ficus();
-        $this->testWater($bonsai, 'ficus');
+        $ficus = Bonsai::ficus();
+        $this->testWaterAllMonths($ficus);
     }
 
     /**
      * @param Bonsai $bonsai
-     * @param string $type
      * @return void
      */
-    protected function testWater(Bonsai $bonsai, string $type): void
+    protected function testWaterAllMonths(Bonsai $bonsai): void
     {
         foreach ($this->meses as $mes) {
-            $periodicity = $this->useCase->do($bonsai, $mes);
-            $this->assertTrue($periodicity == $this->waterMap[$type][$mes]);
+            $periodicity = $this->waterUseCase->do($bonsai, $mes);
+            $this->assertTrue($periodicity == $this->waterMap[(string)$bonsai->type()][$mes]);
         }
     }
 
