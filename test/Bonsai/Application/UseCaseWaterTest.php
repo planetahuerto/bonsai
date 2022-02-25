@@ -26,7 +26,7 @@ class UseCaseWaterTest extends TestCase
             self::JANUARY => 'muy frecuente',
             self::FEBRUARY => 'muy frecuente',
             self::MARCH => '',
-            self::APRIL => ,
+            self::APRIL => '',
 
         ]
     ];

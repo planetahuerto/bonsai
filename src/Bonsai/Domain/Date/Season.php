@@ -19,7 +19,7 @@ class Season
     {
         $season = new static();
 
-        $season->value = SeasonC
+//        $season->value = SeasonC
 
         return $season;
         // comprobar que estacion es segun mes y dia devolver el enum correspondiente
