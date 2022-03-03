@@ -15,8 +15,6 @@ class ElmType extends BonsaiType
             return parent::water($month);
         }
 
-
+        return parent::WATER_TYPE_VERY_FREQUENT;
     }
-
-
 }
