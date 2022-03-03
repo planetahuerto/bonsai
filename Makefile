@@ -15,8 +15,8 @@ stop:
 	docker-compose stop
 
 ##TEST
-test:
-	docker-compose exec webserver ./vendor/bin/phpunit tests
+tests:
+	docker-compose exec webserver ./vendor/bin/phpunit test
 
 coverage:
 	docker-compose exec webserver ./vendor/bin/phpunit tests --coverage-text
