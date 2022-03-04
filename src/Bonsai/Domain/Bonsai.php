@@ -45,4 +45,9 @@ final class Bonsai
         return $this->type->water($month);
     }
 
+    public function fertilize(\DateTimeInterface $date): bool
+    {
+        return $this->type->fertilize($date);
+    }
+
 }
